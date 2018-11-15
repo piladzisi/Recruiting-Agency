@@ -1,8 +1,8 @@
 
 /*VARIABLES --------------*/
-:root{
+/*:root{
 	--color-primary: #2A3142;
-}
+}*/
 .orange{
 	color:white;
 	background-color: #FF7B23;	
@@ -72,13 +72,19 @@ ul{
 .site-header-fixed{
 	position: sticky;
 	position: -webkit-sticky;
-	z-index:1000;
+	z-index:1000; /*stops the content from scrolling on top of header*/
   	top: 0;
   	width: 100%;
   	min-height: 5rem;
   /*	overflow: hidden; */ 	
 }
-
+.container-fluid{
+	margin:0;
+	padding:0;
+}
+.website{
+	height:100vh;
+}
 /*@media screen and (max-width:1200px)
 	.form-control,
 	.orange{

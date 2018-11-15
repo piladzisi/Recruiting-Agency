@@ -1,0 +1,103 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.website{
+  /*height:100vh;*/
+  display: grid;
+  grid-template-columns:1fr 2fr 1fr;
+  grid-template-rows:110px minmax(auto, 140px)  minmax(160px, auto) minmax(300px, auto) 100px;
+  grid-gap:10px;
+   background: linear-gradient(180deg, #EDEEEF, transparent),
+        linear-gradient(180deg, #2A3142, transparent 20%),
+        url('../images/bridge.jpg') no-repeat center;          
+    background-size: cover;
+    background-position:100% 0;
+}
+.cv{
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(300px, auto);  
+  grid-gap: 2%;  
+}
+
+.thumbnail{
+  height: 60px;
+  width: 60px;
+  margin: 3rem;
+  opacity: 0.8;
+}
+.item{
+  background-color: white;
+  text-align: center;
+}
+body {
+	font-size: 1.4em;
+	font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #fbaea8;
+}
+
+header{
+  position: sticky;
+  position: -webkit-sticky;
+  z-index:1000; /*stops the content from scrolling on top of header*/
+    top: 0;  
+    background-color: white;
+    overflow: hidden;   
+}
+footer {
+  background-color: #2A3142;
+}
+header,
+footer,
+.job-search,
+.categories,
+.cv{
+	grid-column:1 / -1;	
+}
+footer{
+  grid-row: -2 / -1; 
+}
+
+ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.categories {
+  background-color: rgba(42, 49, 66, 0.8);
+}
+.orange{
+  color:white;
+  background-color: #FF7B23;  
+  border-color:#FF7B23;
+  
+}
+.form-control{
+  border:none;  
+}
+.form-control,
+.orange{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2); 
+    min-height: 50px;
+  min-width: 120px;    
+} 
+
+
+.btn:hover{
+    background-color: #ff6600;
+    color: #fefefe;
+    border-color:#ff6600;
+}
+.logo{
+  max-height: 110px;  
+  }
