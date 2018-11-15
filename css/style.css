@@ -1,0 +1,82 @@
+
+/*VARIABLES --------------*/
+:root{
+	--color-primary: #2A3142;
+}
+.orange{
+	color:white;
+	background-color: #FF7B23;	
+	border-color:#FF7B23;
+	
+}
+.form-control{
+	border:none;
+	
+}
+.form-control,
+.orange{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2); 
+    min-height: 60px;
+	min-width: 120px;   
+}
+
+.btn:hover{
+    background-color: #ff6600;
+    color: #fefefe;
+    border-color:#ff6600;
+}
+
+.input-group .form-control {
+    margin: 0px !important;
+}
+/*div{
+	border-bottom: 1px solid red;
+}
+*/
+ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+#bg-image{
+	background: linear-gradient(180deg, #EDEEEF, transparent),
+				linear-gradient(180deg, #2A3142, transparent 20%),
+	 			url('../images/bridge.jpg') no-repeat center;          
+  	background-size: cover;
+  	background-position:100% 0;
+	}
+#categories{
+	background-color: rgba(42, 49, 66, 0.8);
+}
+.thumbnail{
+	height: 60px;
+	width: 60px;
+	margin: 3rem;
+	opacity: 0.7;
+}
+.logo{
+	max-height: 110px;	
+}
+
+
+/*Grid Layout*/
+.grid{
+	max-width: 1600px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-rows: 300px; 	
+	grid-gap: 3%;
+}
+
+/*@media screen and (max-width:1200px)
+	.form-control,
+	.orange{
+		display:block;
+		float:left;
+		clear:both;
+	}
+*/
+/*@media (max-width: 780px)
+	.grid{
+		grid-template-columns: minmax(300px, 400px);
+	}*/
