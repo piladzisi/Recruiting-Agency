@@ -6,7 +6,7 @@
 .website{
   /*height:100vh;*/
   display: grid;
-  grid-template-columns:1fr 2fr 1fr;
+  grid-template-columns:repeat(8, 1fr);
   grid-template-rows:110px minmax(auto, 140px)  minmax(160px, auto) minmax(300px, auto) 100px;
   grid-gap:10px;
    background: linear-gradient(180deg, #EDEEEF, transparent),
@@ -58,13 +58,16 @@ footer {
 }
 header,
 footer,
-.job-search,
 .categories,
 .cv{
 	grid-column:1 / -1;	
 }
 footer{
   grid-row: -2 / -1; 
+}
+.job-search{
+  grid-column:3 / 7;
+  align-self: center; 
 }
 
 ul{
