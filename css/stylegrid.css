@@ -7,7 +7,7 @@
   /*height:100vh;*/
   display: grid;
   grid-template-columns:repeat(8, 1fr);
-  grid-template-rows:110px minmax(auto, 140px)  minmax(160px, auto) minmax(300px, auto) 100px;
+  grid-template-rows:110px minmax(auto, 140px)  minmax(160px, auto) minmax(300px, auto) minmax(120px, auto);
   grid-gap:10px;
    background: linear-gradient(180deg, #EDEEEF, transparent),
         linear-gradient(180deg, #2A3142, transparent 20%),

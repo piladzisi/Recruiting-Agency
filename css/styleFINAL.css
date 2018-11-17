@@ -1,0 +1,130 @@
+:root{
+--main-color:#222F5B; /*--main-color:  #333 #222F5C; #222F5B */
+--orange:#FD8D00;
+}
+
+
+.wrapper {
+    display: grid;
+    background:url('https://picsum.photos/1920/1080/?random') no-repeat center;          
+    background-size: cover;         
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+}
+
+header,
+footer,
+.search,
+.vacancies, 
+.why,
+.blog{
+	grid-column:1 / -1;	
+}
+header {  
+  position: sticky;
+  position: -webkit-sticky;
+  z-index:1000; /*stops the content from scrolling on top of header*/
+  top: 0;  
+  background-color: white;
+  overflow: hidden;  
+}
+.intro{
+	grid-column: 8/11;
+	 align-self: center;
+}
+.search {
+   /* align-self: center;*/
+    grid-column: 4 / 10;
+    grid-row: 3/4;
+ 	padding:30px;
+ 	background-color: var(--main-color);       
+}
+
+.vacancies {
+   background-color: var(--main-color);
+   opacity: 0.6;
+}
+.why { 
+   background-color: var(--main-color);
+}
+
+.blog {
+  background-color: var(--orange);
+}
+footer{
+	background-color: var(--main-color);
+}
+
+
+.logo{
+  max-height: 120px;   
+  margin-left: 10rem;
+  margin-top:10px;  
+}
+
+.orange{
+  color:white;
+  background-color: var(--orange);  
+  border:none;
+  
+}
+
+.form-control,
+.orange{	
+    min-height: 50px;
+  	min-width: 120px;   
+} 
+header,
+.form-control,
+.orange{
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+border:none; 
+}
+
+.btn:hover{
+    background-color: #EE8500;
+    color: #fff;    
+    }    
+ul{
+	list-style-type: none;
+}
+
+i{
+	color: #fff;
+}
+/*************MEDIA***********/
+/*@media screen and (max-width: 640px) {
+    .container {
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            "s s s s s s s s s s s s"
+            "v v v v v v v v v v v v"
+            "w w w w w w w w w w w w"
+            "b b b b b b b b b b b b";
+    }
+}*/
+@media screen and (max-width: 640px) {
+	.search {     
+       grid-column: 1 / -1;
+       padding-left:5px;
+ 	   padding-right:5px;
+ 	   }	
+	.intro{
+	grid-column: 2/11;
+	align-self: center;
+	}
+	.logo {	
+	 margin-left: 1rem;
+     }
+     h4{
+     	font-size: 1.1rem;
+     }
+}
+
+@media screen and (max-width: 1200px) {
+	.logo {	
+	 margin-left: 2rem;
+
+     }
+} 
+
